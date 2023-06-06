@@ -18,20 +18,7 @@
   <?php require_once INCLUDES.'inc_styles.php'; ?>
 </head>
 
-<body id="page-top">
+<body class="bg-gradient-primary">
 
 <!-- Page Wrapper -->
 <div id="wrapper">
-
-<?php require_once INCLUDES.'inc_sidebar.php'; ?>
-
-x    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-              <?php require_once INCLUDES.'inc_topbar.php'; ?>
-
-              <!-- Begin Page Content -->
-              <div class="container-fluid">
-<!-- ends inc_header.php -->

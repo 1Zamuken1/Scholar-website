@@ -15,7 +15,7 @@ class homeController extends Controller {
 
     register_to_bee_obj('bee_var', 'Súper Bee Var');
 
-    View::render('bee', $data);
+    View::render('index', $data);
   }
 
   function test()
