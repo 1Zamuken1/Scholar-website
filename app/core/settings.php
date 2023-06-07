@@ -16,7 +16,7 @@ define('SITE_LANG'   , $this->lng);
 // Versión de la aplicación
 define('BEE_NAME'    , $this->framework); // Viene desde Bee.php
 define('BEE_VERSION' , $this->version);   // Viene desde Bee.php
-define('SITE_NAME'   , 'Scholar.website');    // Nombre del sitio
+define('SITE_NAME'   , 'Aprendiendo');    // Nombre del sitio
 define('SITE_VERSION', '1.0.0');          // Versión del sitio
 
 // Ruta base de nuestro proyecto
@@ -74,7 +74,7 @@ define('LDB_PASS'   , '');
 define('LDB_CHARSET', 'utf8');
 
 // El controlador por defecto / el método por defecto / el controlador de errores por defecto
-define('DEFAULT_CONTROLLER'      , 'home');
+define('DEFAULT_CONTROLLER'      , 'dashboard');
 define('DEFAULT_ERROR_CONTROLLER', 'error');
 define('DEFAULT_METHOD'          , 'index');
 
