@@ -23,12 +23,14 @@
                                       <?php echo insert_inputs(); ?>
                                       <div class="form-group">
                                         <input type="email" class="form-control form-control-user"
+                                        name="email"
                                           id="email" aria-describedby="emailHelp"
-                                          placeholder="Ingresa tu correo electrónico ...">
+                                          placeholder="Ingresa tu correo electrónico ..." required>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="password" placeholder="Ingresa tu contraseña ...">
+                                            name="password"
+                                                id="password" placeholder="Ingresa tu contraseña ..." required>
                                       </div>
                                         <button class="btn btn-primary btn-user btn-block" type="submit">Ingresar</button>
                                     </form>
