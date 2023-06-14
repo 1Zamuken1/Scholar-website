@@ -20,6 +20,11 @@ class dashboardController extends Controller {
   
   function index()
   {
+    if (!is_user(get_user_role(), ['admin'])){
+      Flasher::new('No tienes acceso a esta área', 'danger');
+      Redirect::to('home');
+    }
+
     $data = 
     [
       'title' => 'Reemplazar título',

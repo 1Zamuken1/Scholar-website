@@ -42,7 +42,7 @@ class loginController extends Controller {
           throw new Exception('Las correo no son correctas.');
         }
         
-        if (!password_verify($password.AUTH_SALT, $user['password'])) {
+        if (password_verify($password.AUTH_SALT, $user['password'])) {
           throw new Exception('Las contraseña no son correctas.');
         }
 
