@@ -13,6 +13,7 @@
                             <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
+                                    <img src="<?php echo get_image('logo.png'); ?>" alt="<?php echo get_sitename(); ?>" class="img-fluid mb-3">
                                     <div class="text-center">
                                       <h1 class="h4 text-gray-900 mb-4"><?php echo sprintf('Bienvenido a %s!', get_sitename()); ?></h1>
                                     </div>
