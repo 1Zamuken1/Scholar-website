@@ -10,20 +10,21 @@ class materiasController extends Controller {
   function __construct()
   {
     // Validación de sesión de usuario, descomentar si requerida
-    /**
     if (!Auth::validate()) {
       Flasher::new('Debes iniciar sesión primero.', 'danger');
       Redirect::to('login');
     }
-    */
+    
   }
   
   function index()
   {
     $data = 
     [
-      'title' => 'Reemplazar título',
-      'msg'   => 'Bienvenido al controlador de "materias", se ha creado con éxito si ves este mensaje.'
+      'title' => 'Todas las materias',
+      'slug' => 'materias',
+      'msg'   => 'Bienvenido al controlador de "materias", se ha creado con éxito si ves este mensaje.',
+      'materias' => materiaModel::all()
     ];
     
     // Descomentar vista si requerida
@@ -37,7 +38,12 @@ class materiasController extends Controller {
 
   function agregar()
   {
-    View::render('agregar');
+    $data=
+    [
+      'title' => 'Agregar Materia',
+      'slug'  => 'materias'
+    ];
+    View::render('agregar', $data);
   }
 
   function post_agregar()
