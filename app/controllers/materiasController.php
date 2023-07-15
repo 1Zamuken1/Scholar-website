@@ -23,7 +23,7 @@ class materiasController extends Controller {
     [
       'title' => 'Todas las materias',
       'slug' => 'materias',
-      'msg'   => 'Bienvenido al controlador de "materias", se ha creado con éxito si ves este mensaje.',
+      'button' => ['url' => 'materias/agregar', 'text' => '<i class=fas fa-plus></i> Agregar materia'],
       'materias' => materiaModel::all()
     ];
     
@@ -85,6 +85,7 @@ class materiasController extends Controller {
     }
   
   }
+
   function editar($id)
   {
     View::render('editar');
